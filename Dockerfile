@@ -6,7 +6,3 @@ COPY package*.json ./
 RUN npm ci
 
 COPY ./ ./
-
-CMD npm run db:start && npm start
-
-EXPOSE 3000

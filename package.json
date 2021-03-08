@@ -5,7 +5,7 @@
    "main": "dist/index.js",
    "scripts": {
       "start": "ts-node src/index.ts",
-      "db:start": "",
+      "db:start": "ts-node ./node_modules/typeorm/cli.js migration:run",
       "test": "echo \"Error: no test specified\" && exit 1"
    },
    "repository": {
